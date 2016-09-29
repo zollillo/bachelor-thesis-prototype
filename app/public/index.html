@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+index.html
+application static html
+-->
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>Cohesion Catalyst</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- third party stylesheets
+    ================================================== -->
+    <link href="css/bootstrap_css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap_css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap_css/docs.css" rel="stylesheet">
+    <link href="css/customized_bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 30px;
+        }
+    </style>
+
+    <!-- own stylesheets
+    ================================================== -->
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/svg_style.css" rel="stylesheet">
+
+
+    <!-- third-party javascript
+    ================================================== -->
+    <!--<script src="js/jq/jquery-1.7.js"></script>-->
+    <script src="js/jq/jquery-1.9.1.js"></script>
+    <script src="js/jq/jquery.event.gevent.js"></script>
+    <script src="js/bootstrap_js/bootstrap.js"></script>
+    <script src="js/libs/handlebars-1.0.rc.1.js"></script>
+    <script src="js/d3/d3.v3.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src=js/bootstrap_js/html5shiv.js"></script>
+    <![endif]-->
+
+
+    <!-- own javascript
+    ================================================== -->
+    <script src="js/data.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.util.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.dummy.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.data.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.model.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.shell.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.header.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.login.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.topic_input.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.visualization.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            app.initModule($('#app'));
+        });
+    </script>
+
+</head>
+
+<body>
+
+<div id="app"> <!-- main container of the application -->
+</div>
+<!--/.app-->
+
+</body>
+</html>

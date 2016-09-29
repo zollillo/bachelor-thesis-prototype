@@ -1,0 +1,59 @@
+<div class="well sidebar-nav">
+    <div class="training-select">
+        <label for="training" class="input-label">Trainings-ID:</label>
+        <select name="training" id="training">
+            <option>Please, select:</option>
+            {{#each trainings}}
+                <option>{{id}}</option>
+            {{/each}}
+        </select>
+        <div class="alert-div">
+        </div>
+        <p class="divider"></p>
+    </div>
+    <div class="tree-container">
+        <label class="input-label">Categories:</label>
+        <ul class="nav nav-list">
+            {{#each categories}}
+                <li><label class="tree-toggler" style="color:{{color}}">{{tag}}</label>
+
+                    <div class="control-group tree" id="{{tag}}">
+                        <input type="hidden" name="{{tag}}-count" value="0"/>
+
+                        <div class="controls" id="{{tag}}-topic-0">
+                            <div class="input-append dropdown">
+                                <input class="input-medium" autocomplete="off" id="{{tag}}-field-0" name="topic"
+                                       type="text"
+                                       autofocus
+                                       placeholder="Enter topic"
+                                       data-provide="typeahead" data-items="8"
+                                       data-source='["Athletics","Berlin","Coffee","Dancing","Europe"]'/>
+                                <button class="btn dropdown-toggle"
+                                        data-toggle="dropdown">
+                                    <i class="icon-pencil"></i>
+                                </button>
+                                <ul class="dropdown-menu pull-right">
+                                    <!-- dropdown menu links -->
+                                    <li><a class="add-topic"><i class="icon-plus"></i> Add topic</a>
+                                    </li>
+                                    <li><a class="enter-subtopic"><i class="icon-edit"></i> Enter sub-topic</a>
+                                    </li>
+                                    <li><a class="remove-topic"><i class="icon-remove"></i> Remove topic</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--<div><button id="test">Submit</button></div>-->
+                        <div>
+                            <button class="topic-submit-btn btn">Submit</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="divider"></li>
+            {{/each}}
+
+        </ul>
+    </div>
+    <!--/.tree-container -->
+</div>
+<!--/.well -->

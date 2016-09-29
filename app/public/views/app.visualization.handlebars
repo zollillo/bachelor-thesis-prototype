@@ -1,0 +1,59 @@
+<!-- The tab functionality within this area is accomplished with the bootstrap-tab.js plugin.
+* cf. [as per August 2nd, 2013]:
+* http://getbootstrap.com/2.3.2/javascript.html#tabs  -->
+<div class="hero-unit">
+    <div class="visualization-area">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#welcome" data-toggle="tab">Welcome</a></li>
+            <li><a href="#single" data-toggle="tab">Single</a></li>
+            <li><a href="#pair" data-toggle="tab">Pair up</a></li>
+            <li><a href="#all" data-toggle="tab">Overall</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active" id="welcome">
+               <!-- <p class="muted text-center">
+                    <small>Please note: this software is still in experimental development phase
+                        and therefore to be considered as unstable!
+                    </small>
+                </p> -->
+                <h1>Cohesion Catalyst</h1>
+                <p id="coca_about"> is a web application built to visualize multicollectivity and to
+                    let you
+                    explore the visualized information. To the left there is the input area separated into categories
+                    of collectivity for gathering information about yourself and what you are identifying
+                    with
+                    considering your profession, your education, organizations or groups you are a part of, et cetera.
+                    The data you provide will be processed and visualized and you can switch between 3 different view
+                    modes:
+                </p>
+                <dl class="dl-horizontal">
+                    <dt>Single</dt>
+                    <dd>visualizes only the information about yourself.</dd>
+                    <dt>Pair up</dt>
+                    <dd>lets you explore the things you have in common with another user.</dd>
+                    <dt>Overall</dt>
+                    <dd>is a visualization of the collective group of current users.
+                    </dd>
+                </dl>
+
+
+            </div>
+            <div class="tab-pane" id="single"></div>
+            <div class="tab-pane" id="pair">
+                <div class="user-select">
+                    <label for="users">Explore the things you have in common with:</label>
+                    <select name="users" id="users">
+                    </select>
+                    <div class="alert-div">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="all">...</div>
+        </div>
+
+
+    </div>
+    <!--/.visualization-area-->
+</div>
+<!--/.hero-unit-->

@@ -26,6 +26,7 @@ h1 {
 
 h2 {
   color:#393939;
+  font-weight: 500;
 }
 
 h3, h4, h5, h6 {
@@ -53,7 +54,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:860px;
+  width:960px;
   margin:0 auto;
 }
 
@@ -169,7 +170,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:600px;
   float:right;
   padding-bottom:50px;
 }

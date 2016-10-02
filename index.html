@@ -12,33 +12,76 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
+
   <body>
     <div class="wrapper">
       <header>
         <h1>Cohesion Catalyst prototype</h1>
-        <p></p>
+        <p>A basic single page application written in JavaScript.</p>
+        <p>Created by <a href="https://github.com/zollillo">Nadja Zollo (@zollillo)</a></p>
 
-        <p class="view"><a href="https://github.com/zollillo/thesis-ccat-prototype">View the Project on GitHub <small>zollillo/thesis-ccat-prototype</small></a></p>
+        <p class="view"><a href="https://github.com/zollillo/thesis-ccat-prototype">View the source code on GitHub <small>zollillo/thesis-ccat-prototype</small></a></p>
 
-
-        <ul>
-          <li><a href="https://github.com/zollillo/thesis-ccat-prototype/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/zollillo/thesis-ccat-prototype/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/zollillo/thesis-ccat-prototype">View On <strong>GitHub</strong></a></li>
-        </ul>
       </header>
-      <section>
-        <h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p><a href="https://github.com/zollillo" class="user-mention">@zollillo</a></p>
+      <section>
+        <h1>An SPA for Visualizing Multicollectivity</h1>
+        <p>
+          <i>Cohesion Catalyst prototype</i> is a single page application written in JavaScript and designed for visualizing multicollectivity. Based on personal information (e.g. interests, hobbies, education) submitted by the users, the goal of the application is to let them explore there own multicollectivity as well as the multicollectivity of others by providing an appropriate visualization that, as a result, supports them in discovering connections within a random group people.
+        </p>
+        <p>
+          This prototype is the programming part of my bachelor's thesis <i>"Konzeption und Umsetzung einer Web-Applikation zur visuellen Exploration von Multikollektivität" (Design and Implementation of a Web Application for Visually Exploring Multicollectivity)</i> <a href="docs/thesis-nadjazollo.pdf">(PDF&nbsp;here)</a>, which I submitted in 2013 to the Department of Computer Science and Media at <a href="http://www.beuth-hochschule.de/">Beuth University of Applied Sciences</a> Berlin.
+        </p>
+        <p>
+          During development, the focus was on the architecture of a single page web application.
+          Unfortunately, due to the time frame of the thesis (three months as a whole), some of the application's requirements couldn't be realized within this tight schedule. In particular, the visualization part is limited since there was not enough time to implement more than one basic visualization approach. However, the resulting prototype provides a solid starting point and demonstrates the concept of an application for visualizing multicollectivity.
+        </p>
+        <p>
+          <i>Cohesion Catalyst</i> is also the name of a joint research project between the supervisors of my thesis: <a href="https://www.htw-berlin.de/hochschule/personen/person/?id=3977">Prof. Dr. Stefanie Rathje</a> and <a href="http://schirmacher.beuth-hochschule.de/">Prof. Dr.-Ing. Hartmut Schirmacher</a>. More information about the project can be found at <a href="http://cohesion-lab.com/">www.cohesion-lab.com</a>.
+        </p>
+
+        <h2>Context</h2>
+        <p>
+          In my thesis, I look at information visualization and how it can be used in social and cultural sciences to visualize multicollectivity. I focus on graphs and networks because they are very well suited to representing structures of connections and relationships in a social group.
+        </p>
+        <dl>
+          <dt>Information visualization</dt>
+          <dd>Information visualization can be defined as "the use of computer-supported, interactive, visual representation of abstract data to amplify cognition"
+          <i>[Card et al.: "Readings in information visualization: using vision to think.", Morgan Kaufmann, 2001, p. 7].</i> Using a visual representation helps us to analyze, understand, and communicate complex information or information that might not be easily apparent on first sight.
+          </dd>
+          <dt>Multicollectivity</dt>
+          <dd>Multicollectivity is a modern paradigm in cultural studies that describes the idea that everyone belongs to multiple social/cultural groups. What this means is that there are multiple cultural influences that contribute to forming our identity and our self. According to the concept of multicollectivity, an individual doesn't primarily belong to only one culture defined by categories such as country or ethnicity. Thus, multicollectivity can help to overcome stereotypical thinking of cultural differences between "primary" cultures and to constitute social cohesion [cf. Prof. Dr. Stefanie Rathje's <a href="http://stefanie-rathje.de/artikel-multikollektivitaet/">article on multicollectivity</a> (in German)].</dd>
+        </dl>
+
+        <h2>Technologies</h2>
+        <p>
+          The <i>Cohesion Catalyst prototype</i> application was developed with the following technologies:
+        </p>
+        <ul>
+          <li>Modern web standards, i.e. HTML5, CSS3, and JavaScript</li>
+          <li><a href="https://jquery.com/">jQuery</a> (1.9.1)</li>
+          <li><a href="http://getbootstrap.com/">Bootstrap</a> (2.3.2)</li>
+          <li><a href="http://handlebarsjs.com/">Handlebars</a> (1.0.rc.1)</li>
+          <li><a href="https://d3js.org/">D3</a> (3.2.8)</li>
+          <li><a href="https://neo4j.com/product/">Neo4j</a> (1.9.1 Community Edition)</li>
+        </ul>
+
+        <h2>Demo Video</h2>
+        <p>
+          This is a short video (w/o sound) that demonstrates the result of my implementation and which was intended as supplementary material for my supervisors. Therefore, it is a walktrough example that shows certain features of the application and also some tools provided by the database in use.</p>
+        <video controls width="600px">
+          <source src="video/demo-ccat-prototype.webm" type="video/webm">
+          <source src="video/demo-ccat-prototype.mp4" type="video/mp4">
+            Unfortunately, your browser doesn't support HTML5 video in WebM with VP8 or MP4 with H.264.
+        </video>
       </section>
+
       <footer>
-        <p>This project is maintained by <a href="https://github.com/zollillo">zollillo</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
+
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+
   </body>
 </html>
